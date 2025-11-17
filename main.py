@@ -7,10 +7,9 @@ get_asset_report_url = "https://api.criminalip.io/v1/asset/ip/report"
 domain_scan_url = "https://api.criminalip.io/v1/domain/scan"
 get_domain_report_url = "https://api.criminalip.io/v2/domain/report/"
 criminal_ip_api_key = os.environ.get("CRIMINAL_IP_API_KEY","")
-search_value = ""
 search_type = input("어떤 API를 호출할지 선택하세요.\n1. Asset Search\n2. Get Asset Search Report\n3. Domain Scan\n4. Get Domain Scan Report\n: ")
 
-def call_crimial_ip_api (criminal_ip_api_key:str, search_value:str):
+def call_crimial_ip_api (criminal_ip_api_key:str):
     """Call Criminal IP API
 
     Args:
@@ -44,4 +43,4 @@ def call_crimial_ip_api (criminal_ip_api_key:str, search_value:str):
         print(f"asset search fail: {e}")
 
 if __name__ == "__main__":
-    call_crimial_ip_api(criminal_ip_api_key, search_value)
+    call_crimial_ip_api(criminal_ip_api_key)
