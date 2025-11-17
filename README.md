@@ -23,7 +23,7 @@ python -m venv venv
 pip install -r requirements.txt
 
 4) .env 파일 추가
-.env 파일을 생성하고 CRIMINAL_IP_API_KEY 상수를 선언하고 Criminal IP 계정에 부여된 API Key를 저장해주세요.\
+.env 파일을 생성하고 CRIMINAL_IP_API_KEY 상수를 선언하고 Criminal IP 계정에 부여된 API Key를 저장해주세요.
 ex) CRIMINAL_IP_API_KEY="나의apikey"
  
 5) 실행
